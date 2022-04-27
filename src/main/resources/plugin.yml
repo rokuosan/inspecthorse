@@ -1,0 +1,7 @@
+# Information
+name: TeleportAssist
+main: com.deviseworks.inspecthorse.App
+version: ${version}
+api-version: 1.18
+prefix: IH
+author: rokuosan
