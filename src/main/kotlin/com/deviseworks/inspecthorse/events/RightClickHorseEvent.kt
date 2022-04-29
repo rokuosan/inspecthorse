@@ -21,8 +21,11 @@ class RightClickHorseEvent: Listener {
                 targetEntity.type == EntityType.ZOMBIE_HORSE){
             val horse = targetEntity as Horse
             val name = horse.customName
-            val speed =horse.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED)?.value?.times(100)
-            val jump = horse.jumpStrength.times(100)
+            val speed =horse.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED)?.value?
+            val jump = horse.jumpStrength
+            
+            speed = speed*43.1
+            jump = 3.0509*jump*jump+2.7941*jump-0.5525
 
             e.player.sendMessage("${ChatColor.AQUA}${ChatColor.STRIKETHROUGH} |                                     | ")
             if(!name.isNullOrEmpty()) e.player.sendMessage("名前: $name")
