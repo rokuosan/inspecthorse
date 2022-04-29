@@ -1,5 +1,5 @@
 # Information
-name: TeleportAssist
+name: InspectHorse
 main: com.deviseworks.inspecthorse.App
 version: ${version}
 api-version: 1.18
